@@ -1,0 +1,339 @@
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body{
+    overflow: hidden;
+}
+.purple-bg{
+    background-color: rgb(156, 132, 218);
+    height: 100vh; /* Each section will take full viewport height */
+    overflow-y: auto; /* Allow vertical scrolling within each section */;
+}
+
+.intro{
+    color:azure;
+    grid-area:i;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(92, 65, 126);}
+
+.love{
+    color:pink;
+    text-shadow: 0px 0px 5px rgb(92, 65, 126);
+    grid-area:l;
+    font-size: 40px;
+    margin-right: 250px;}
+
+.anime{
+    color:azure;
+    grid-area: a;}
+    .anime:hover{color:pink;}
+
+#scroll-anime{
+    padding-top:20px;
+}
+
+.cats{
+    color:azure;
+    grid-area: c;}
+    .cats:hover{color:pink;}
+
+.videogames{
+    color:azure;
+    grid-area: vd;}
+    .videogames:hover{color:pink;}
+
+.portrait{
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    grid-area: p;
+    border-radius: 15px 70px;
+    border: 10px solid rgb(167, 243, 167);
+    align-self: center;
+    justify-self: end;}
+
+.grid-container1{
+    display: grid;
+    grid-template-areas:
+        'i i'
+        'p l'
+        'p a'
+        'p c'
+        'p vd';
+    text-align: center;
+    column-gap: 5px;
+    row-gap: 1px;
+    grid-template-columns: 5fr 5.5fr;
+    margin-bottom: 70px;}
+
+.grid-container1 > .anime, .cats, .videogames{
+    text-shadow: 0px 0px 5px rgb(92, 65, 126);
+    text-align: center;
+    font-size: 40px;
+    margin-right: 250px;}
+
+
+/* ---------------------- Anime/Manga section -------------------- */
+
+.blue-bg{
+    background-color: rgb(167, 205, 243);
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;}
+
+.amhead{
+    grid-area:amh;
+    font-size: 50px;
+    text-shadow: 0px 0px 4px pink;
+    margin-bottom: 25px;}
+
+.ambody{grid-area:amb;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;}
+
+.firstA{grid-area:fira;}
+.firstM{grid-area:firm;}
+.FavA{grid-area:fava;}
+.FavM{grid-area:favm;}
+
+.first-favs{
+    font-size: 30px;
+    margin-left:auto;
+    margin-right: auto;
+    text-shadow: 0px 0px 4px pink;
+    margin-top: 30px;}
+    .first-favs > img {
+        width:60%;
+        max-width: 60%;
+        margin: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+
+.grid-containerAM{
+    display: grid;
+    grid-template-areas:
+        "amh amh amh amh"
+        "amb amb amb amb"
+        "fira fira firm firm"
+        'fava fava favm favm';
+    text-align: center;
+    padding: 15px;}
+
+/* AM Button styling */
+
+.b1-style{
+    font-size: 20px;
+    background-color: rgb(167, 205, 243);
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 0px 0px 4px pink}
+
+.b1-style:hover{
+    background-color:pink;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px pink;}
+
+
+.top{grid-area:"top";}
+.next1{grid-area:"n1";}
+.next2{grid-area:"n2";}
+            
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding-bottom: 25px;}
+
+#scrolltop{
+    padding:20px;
+}
+
+/* AM Button styling ends */
+
+/* ---------------------- Pets section -------------------- */
+
+.green-bg{
+    background-color: rgb(167, 243, 219);
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;}
+
+.P-head{
+    grid-area:amh;
+    font-size: 50px;
+    text-shadow: 0px 0px 5px rgb(153, 142, 236);
+    margin-bottom: 25px;
+    margin-top: 15px;
+    grid-area:ph;}
+    #scroll-pets{
+        padding-top:20px;
+    }
+
+.PBody1{grid-area:pb1}
+.PBody2{grid-area:pb2}
+
+.PBody1, .PBody2{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;}
+
+.eeveepics{
+    grid-area: ep;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-shadow: 0px 0px 5px rgb(153, 142, 236);}
+
+.eevee-pic > img{
+    width:70%;
+    max-width: 70%;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 7px;}
+
+
+.otherpics{
+    grid-area:op;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-shadow: 0px 0px 5px rgb(153, 142, 236);}
+
+.o-picks > img{
+    width:70%;
+    max-width: 70%;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 7px;}
+
+.grid-containerP{
+    display: grid;
+    grid-template-areas:
+        "ph ph ph"
+        "pb1 pb1 pb1"
+        "ep ep ep "
+        'pb2 pb2 pb2'
+        "op op op";
+    text-align: center;
+    padding: 15px;
+    grid-template-columns: 5fr 5.5fr;}
+
+.button-container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        padding-bottom: 25px;}
+
+.b2-style{
+    font-size: 20px;
+    background-color: rgb(167, 243, 219);
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 0px 0px 4px pink}
+
+.b2-style:hover{
+    background-color:rgb(153, 142, 236);
+    text-shadow: 0px 0px 5px rgb(167, 243, 219);
+    box-shadow: 0px 0px 10px rgb(153, 142, 236);}  
+
+
+/* -------------------------- Media Queries ----------------------- */
+
+@media screen and (max-width: 1080px){
+
+    .intro{
+        color:azure;
+        grid-area:i;
+        font-size: 50px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+        text-shadow: 0px 0px 5px rgb(92, 65, 126);}
+    
+    
+    .portrait{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        display: block;
+        width: 50%;
+        max-width: 300px;
+        grid-area: p;
+        border-radius: 15px 70px;
+        border: 10px solid rgb(167, 243, 167);
+        box-shadow: 0px 0px 5px rgb(167, 243, 167);}
+    
+    .grid-container1{
+        display: grid;
+        grid-template-areas:
+            'i i'
+            'p p'
+            'l l'
+            'a a'
+            'c c'
+            'vd vd';
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        }
+
+    .grid-container1 > .anime, .cats, .videogames{
+            text-shadow: 0px 0px 5px rgb(92, 65, 126);
+            font-size: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 15px;}
+
+    .love{
+            color:pink;
+            text-shadow: 0px 0px 5px rgb(92, 65, 126);
+            grid-area:l;
+            font-size: 35px;
+            margin-left: auto;
+            margin-right: auto;}
+
+    .grid-containerAM{
+        display: grid;
+        grid-template-areas:
+            "amh amh amh amh"
+            "amb amb amb amb"
+            "fira fira firm firm"
+            'fava fava favm favm';
+        text-align: center;
+        padding: 15px;}
+    }
+
+
