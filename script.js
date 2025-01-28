@@ -12,7 +12,7 @@ const toTopButton = document.querySelectorAll('.scroll-to-top');
 
 toTopButton.forEach(button => {
     button.addEventListener('click', function(){
-        document.getElementById("scrolltop").scrollIntoView({behavior:"smooth"});
+        document.getElementById("scroll-to-top").scrollIntoView({behavior:"smooth"});
     });
 });
 
