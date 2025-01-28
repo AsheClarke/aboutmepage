@@ -272,6 +272,7 @@ body{
 
 @media screen and (max-width: 1080px){
 
+    /* Anime & Manga section */
     .intro{
         color:azure;
         grid-area:i;
@@ -334,6 +335,18 @@ body{
             'fava fava favm favm';
         text-align: center;
         padding: 15px;}
+
+    
+    /* Anime & Manga section */
+    
+    .eeveepics, .otherpics {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
+    
+        }
+
+
 
 
